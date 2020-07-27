@@ -10,6 +10,9 @@
       }
       body{
         background-color: lightgoldenrodyellow;
+        background-image: url("https://i.pinimg.com/originals/95/ec/d7/95ecd7db9cdd7477f9c2f39968adaa53.jpg");
+        background-size: 50px 50px;
+  
       }
       #main{
         display: grid;
@@ -20,23 +23,25 @@
       #heading{
         display: grid;
         place-items: center;
-        background-color: aliceblue;
+        background-color: #191970;
         border-radius: 10px;
         padding: 30px;
       }
       h1, h3{
         margin: 0;
-        text-shadow: 3px 3px 3px lightgray;
+        text-shadow: 3px 3px 3px red;
+        color: white;
       }
       #chatbox{
         height: 400px;
         padding: 20px;
-        background-color: white;
+        background-color: #191970;
         border-radius: 10px;
         display: grid;
         grid-template-columns: 1fr;
         align-content: start;
         overflow-y: scroll;
+        color: White;
       }
       .message{
         display: grid;
@@ -44,6 +49,7 @@
         grid-gap: 10px;
         padding: 5px;
         border-radius: 5px;
+
       }
       .message:hover{
         background-color: lightgray;
@@ -52,18 +58,23 @@
         width: 100%;
         font-size: 1.5rem;
         padding: 5px;
+        background-color: #191970;
+        color: White;
       }
       button{
         font-size: 1.5rem;
         padding: 5px;
         cursor: pointer;
+        background-color: #191970;
+        color: White;
       }
       .sender{
-        color: blue;
+        color: red;
       }
       .delete{
         cursor: pointer;
         justify-self: end;
+        color: red;
       }
     </style>
   </head>
@@ -72,25 +83,15 @@
       <div id="heading">
         <h1>The Loneliest Chatroom</h1>
         <h3>No Friends? No Problem!</h3>
+        <img src="https://www.pngonly.com/wp-content/uploads/2017/06/Forever-Alone-PNG-Image.png" width="100">
       </div>
       <div id="chatbox">
-        <div class="message" id="2">
-          <span>10:22</span>
-          <span class="sender">Myself:</span>
-          <span>Is it me you're looking for?</span>
-          <span class="delete">❌</span>
-        </div>
-        <div class="message" id="1">
-          <span>10:21</span>
-          <span class="sender">Me:</span>
-          <span>Hello?</span>
-          <span class="delete">❌</span>
-        </div>
       </div>
       <form><input type="text"/></form>
       <button>I'm feeling Lonely!</button>
     </div>
-    <script>
+    <script src="index.js">
+
     </script>
   </body>
 </html>
